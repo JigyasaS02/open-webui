@@ -4,8 +4,8 @@
     name: common-promote-docker
     jobs:
       - "{folder}/promote-to-{env}":
-          folder: "Yubi/NonPrd/Common/YubiGPT/Int"
-          env: qa
+          folder: "Yubi/NonPrd/Common/YubiGPT/Stg"
+          env: stg
           service_name: yubigpt
           namespace: yubigpt-qa
           helm_or_kubectl_apply: "kubectl apply -f dir/*.yaml -n {namespace}"
